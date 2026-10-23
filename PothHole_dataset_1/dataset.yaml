@@ -1,0 +1,9 @@
+# Ultralytics YOLO dataset configuration file
+path: C:\Users\sasi3\Desktop\poth hole detection\dataset1\PothHole_dataset_1\split  # Dataset root path relative to this dataset.yaml file
+train: train/images
+val: val/images
+test: test/images
+
+# Class names dictionary
+names:
+  0: pothole
