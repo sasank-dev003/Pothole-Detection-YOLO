@@ -8,7 +8,7 @@ def train_pothole_detector(
     # =========================================================================
     # 1. CENTRALIZED CONFIGURATION (Change your parameters ONLY here!)
     # =========================================================================
-    yaml_path: str = r"C:\Users\sasi3\Desktop\poth hole detection\dataset1\PothHole_dataset_1\dataset.yaml",  # Path to your dataset YAML file
+    yaml_path: str = "PothHole_dataset_1/dataset.yaml",  # Path to your dataset YAML file
     model_weights: str = "yolo26s.pt",                   # Pretrained YOLO weights (yolo26n.pt or yolo11n.pt)
     epochs: int = 150,                                    # Maximum number of training epochs
     patience: int = 10,                                  # Early stopping: epochs to wait with no improvement
@@ -18,8 +18,8 @@ def train_pothole_detector(
     save_results: bool = True,                           # Save model checkpoints (best.pt & last.pt)
     save_plots: bool = True,                             # Save graphs, confusion matrices, and val batch images
     save_period: int = -1,                               # Save backup weights every X epochs (-1 disables this)
-    output_project: str = r"C:\Users\sasi3\Desktop\poth hole detection\training_outputs_1",            # Main root folder for saving all training outputs
-    run_name: str = "pothole_yolo26_run3"                     # Subfolder name for this specific training run
+    output_project: str = "training_outputs",            # Main root folder for saving all training outputs
+    run_name: str = "pothole_yolo26_run"                     # Subfolder name for this specific training run
 ):
     """
     Trains an Ultralytics YOLO model on the custom pothole dataset.

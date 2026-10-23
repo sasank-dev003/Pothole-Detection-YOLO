@@ -2,9 +2,9 @@ from ultralytics import YOLO
 from pathlib import Path
 
 def detect_potholes_in_video(
-    model_path: str = r"C:\Users\sasi3\Desktop\poth hole detection\training_outputs_1\pothole_yolo26_run3\weights\best.pt", # Path to your best training weights
-    video_path: str = r"C:\Users\sasi3\Desktop\poth hole detection\sample clip 4.webm",                    # Replace with your actual video filename
-    output_dir: str = r"C:\Users\sasi3\Desktop\poth hole detection\detected vids"
+    model_path: str = "weights/best.pt", # Path to your best training weights
+    video_path: str = "sample vid.mp4",                    # Replace with your actual video filename
+    output_dir: str = "output_results"
 ):
     """
     Loads your trained YOLO model and performs pothole detection on an input video.
